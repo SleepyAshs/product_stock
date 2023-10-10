@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Controle de Estoque</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Gerenciamento de Estoque</h1>
+        <div class="produto-form">
+            <h2>Adicione ou atualize o produto:</h2>
+            <form id="formProduto">
+                <label for="nome">Nome do Produto:</label>
+                <input type="text" id="nome" required>
+                <label for="quantidade">Quantidade em Estoque:</label>
+                <input type="number" id="quantidade" required>
+                <br><br>
+                <div class="botoes-form">
+                    <button type="submit">Salvar</button>
+                    <button type="button" id="cancelar" style="display: none;">Cancelar</button>
+                </div>
+            </form>
+        </div>
+        <div class="produto-lista">
+            <h2>Lista de Produtos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome do Produto</th>
+                        <th>Quantidade em Estoque</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="estoque">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+        
+</body>
+</html>
+
+<!-- Fontes utilizadas:
+1- https://warcontent.com/localstorage-javascript/
+2- Chatgpt
+3- Google Classroom
+4- Youtube: https://www.youtube.com/watch?v=oQ05w1SjL0Q
+
+-->
